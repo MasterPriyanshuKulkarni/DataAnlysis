@@ -446,3 +446,48 @@ Adding titles, axis labels, legends
 Improving colour choices
 
 Better x-axis labelling for grouped boxplots
+
+# Week 4: Structuring Code: Custom Functions and Conditionals
+
+# Function to return minimum and maximum (Question 1)
+Takes a numeric vector as input and returns a list containing the minimum and maximum values. Helps practice basic function structure, arguments, and returning named outputs.
+
+# Creating is_even() using modulo and logical flipping (Question 2)
+Uses x %% 2 to determine evenness. Converts the result to logical and flips TRUE/FALSE using ! so the function returns TRUE for even numbers and FALSE for odd numbers.
+
+# Temperature conversion functions Cel2Far() and Far2Cel() (Question 3)
+Writes two functions that convert temperatures between Celsius and Fahrenheit using the standard formulas. Shows how functions can perform simple mathematical transformations.
+
+# Testing temperature functions with known values (Question 3)
+Verifies correctness using known pairs: 0°C = 32°F and 100°C = 212°F. Also tests that the functions are inverses by checking Cel2Far(Far2Cel(x)) returns x.
+
+# Skewness function using mean, sd, and cubic deviations (Question 4)
+Implements the mathematical formula for skewness by computing the sample mean, sample standard deviation, and summing the cubed deviations. Demonstrates breaking a complex formula into code.
+
+# Testing skewness function with provided vector (Question 4)
+A supplied numeric vector should return a skewness value of approximately 2.399649. Used to confirm the function has been implemented correctly.
+
+# Triangle area function using Heron's formula (Question 5)
+Creates tri_area(a, b, c) that calculates the area of a triangle using s = 0.5(a+b+c) and area = sqrt(s(s–a)(s–b)(s–c)). Demonstrates multi-argument functions and mathematical computation.
+
+# Adding conditionals for invalid or impossible triangles (Question 5)
+Adds input checks: negative side lengths cause stop(), impossible triangles produce a warning, and valid triangles return a numeric area. Introduces defensive programming.
+
+# WSDI heatwave plot for a city (Question 6)
+Loads heatwave_index.RData and filters for a chosen city. Produces a scatter plot of WSDI vs year with color-coded scenarios to show differences over time.
+
+# heatwavesRCP85() function for city or country input (Question 6)
+Builds a function that:
+- Plots WSDI over time for a single city under the RCP8.5 scenario
+- Or calculates and plots the average WSDI for all cities in a country
+- Uses conditionals to check whether the input matches a city or a country
+Demonstrates flexible function design.
+
+# Parsing crater age ranges with custom functions (Question 7)
+Creates functions that interpret multiple age formats such as <50, >200, ~100, 300 ± 20, 100–150. Extracts consistent numerical min and max values from messy text data.
+
+# Creating min_age and max_age columns and plotting ranges (Question 7)
+Applies the custom functions rowwise to generate two new columns. Then plots each crater’s min–max age as a line segment, giving a visual overview of age uncertainty across craters.
+
+
+
