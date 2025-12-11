@@ -288,3 +288,161 @@ Recognising when transformations are appropriate
 
 Comparing trends between subgroups (gender, deprivation, season, species)
 
+Week 3 — Introduction to Data Visualisation
+
+This week introduces the foundations of data visualisation in R, using both base R and ggplot2.
+You learn how to choose the right plot, tidy data before plotting, compare distributions, analyse trends, and communicate patterns clearly.
+
+📂 What’s in this folder
+# 1️⃣ Week-3-Question-Sheet-Solutions.pdf
+
+Main worksheet for Week 3. It contains the core visualisation problems for the week.
+
+Question 1 — Visualising Population & Deprivation (Pages 1–7)
+
+Covers:
+
+Reading & tidying data using pivot_longer()
+
+Boxplots comparing populations across deprivation groups
+(See examples on pages 1–3) 
+
+Week-3-Question-Sheet---Solutio…
+
+Log-transformed boxplots (scale_y_log10()) to handle skew
+
+Histograms comparing 2001 vs 2013 population distributions
+(Page 3–4) 
+
+Week-3-Question-Sheet---Solutio…
+
+Overall population trends using line charts
+(Pages 4–5)
+
+Grouped time trends for Lower vs Upper deprivation
+(Pages 6–7)
+
+Question 2 — Himalayan Expedition Data (Pages 7–13)
+
+Data from TidyTuesday: deaths, injuries, peaks climbed.
+
+Includes:
+
+Seasonal variation in deaths & injuries (bar charts and line graphs)
+(Pages 7–9) 
+
+Week-3-Question-Sheet---Solutio…
+
+Identifying peaks with most deaths (total and per expedition)
+Annotated plots with arrows (Pages 9–11)
+
+Scatterplots: team size vs highest point reached (Pages 11–12)
+
+Whether oxygen use indicates "good" or "bad" expeditions (Page 12)
+
+Question 3 — Suicide Rate Visualisation (Pages 13–17)
+
+Tasks include:
+
+Tidying gender × age data using pivoting
+
+Calculating suicide rates per 100,000
+
+Histograms comparing male vs female suicide rates (Pages 13–14)
+
+Boxplots of Gender × Age groups (Pages 14–15)
+
+Faceted boxplots comparing gender differences across each age group
+(Pages 15–17)
+
+
+Week-3-Question-Sheet---Solutio…
+
+Question 4 — Friends Dialogue Dataset (Pages 17–22)
+
+Using season, speaker, and emotion data.
+
+You visualise:
+
+Which season had the most positive emotions (Page 17–18)
+
+Which character spoke the most overall (Pages 18–19)
+
+How speaking frequency changed across seasons and episodes
+Using line plots with season breaks (Pages 20–22)
+
+
+Week-3-Question-Sheet---Solutio…
+
+Question 5 — GP Prescribing Data (Pages 23–28)
+
+You explore relationships between prescribing rates and demographics.
+
+Plots include:
+
+Multi-panel comparisons (dispensing, age distribution, list size, area type)
+(Pages 23–25)
+
+Differences in prescribing rate across Health Boards (HBCode)
+(Pages 25–28)
+
+Adding annotations + curved arrows in ggplot
+
+
+Week-3-Question-Sheet---Solutio…
+
+# 2️⃣ W3-practice-exercises-solutions.pdf
+
+These are your skill drills for Week 3 — fast reference during the exam.
+
+Exercise 1 — Bar Plots (Pages 1–3)
+
+Species counts for penguins
+
+Species × Island counts
+
+Max bill length by species
+
+
+W3-practice-exercises - solutio…
+
+Exercise 2 — Histograms (Pages 3–5)
+
+Basic flipper length histogram
+
+Multimodal distributions by species
+
+Overlaid histograms using alpha transparency
+
+
+W3-practice-exercises - solutio…
+
+Exercise 3 — Boxplots (Pages 5–8)
+
+Body mass distribution
+
+Body mass by year (group=year)
+
+Species × year boxplots
+
+
+W3-practice-exercises - solutio…
+
+Exercise 4 — Scatter Plots (Pages 8–9)
+
+Bill length vs bill depth
+
+Colouring points by species
+
+Base R vs ggplot syntax
+
+
+W3-practice-exercises - solutio…
+
+Exercise 5 — Customisation (Pages 9–11)
+
+Adding titles, axis labels, legends
+
+Improving colour choices
+
+Better x-axis labelling for grouped boxplots
