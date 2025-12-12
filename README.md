@@ -486,6 +486,50 @@ Demonstrates flexible function design.
 # Parsing crater age ranges with custom functions (Question 7)
 Creates functions that interpret multiple age formats such as <50, >200, ~100, 300 ± 20, 100–150. Extracts consistent numerical min and max values from messy text data.
 
+# Week 4: Structuring Code: Custom Functions and Conditionals
+
+# Function to return minimum and maximum (Question 1)
+Creates minMax(), which takes a numeric vector and returns a list containing the smallest and largest values. Demonstrates how to write a simple function, assign objects inside it, and return multiple outputs in a structured format.
+
+# Creating is_even() using modulo and logical flipping (Question 2)
+Builds a function is_even() by editing the is_odd() logic. Uses x %% 2 to compute remainder, converts to logical, and flips TRUE/FALSE using ! so TRUE means even and FALSE means odd. Reinforces function editing and understanding of logical operators.
+
+# Temperature conversion functions Cel2Far() and Far2Cel() (Question 3)
+Implements two functions that convert temperature between Celsius and Fahrenheit using the standard formulas. Shows how to apply mathematical transformations to an entire vector within a function.
+
+# Testing temperature functions with known values (Question 3)
+Uses known temperature pairs to verify correctness: 0°C = 32°F and 100°C = 212°F. Also checks inverses by confirming Cel2Far(Far2Cel(x)) returns the original input. Demonstrates good practice in writing testable functions.
+
+# Skewness function using mean, sd, and cubic deviations (Question 4)
+Implements the mathematical formula for skewness by computing n, the mean, standard deviation, and summing (x - mean)^3. Then divides by (n - 2) and s^3. Breaks a complex formula into clear computational steps.
+
+# Testing skewness function with provided vector (Question 4)
+A test vector provided in the sheet should return approximately 2.399649. Confirms the correctness of the implementation and highlights the importance of validation through example inputs.
+
+# Triangle area function using Heron's formula (Question 5)
+Defines tri_area(a, b, c) using s = 0.5(a+b+c) and area = sqrt(s(s-a)(s-b)(s-c)). Shows how functions can perform multi-step mathematical calculations and return a single numeric result.
+
+# Adding conditionals for invalid or impossible triangles (Question 5)
+Enhances tri_area() to include input checks: negative values trigger stop(), impossible triangles produce a warning and return NA. Reinforces defensive programming and writing robust functions.
+
+# WSDI heatwave plot for a city (Question 6)
+Loads heatwave_index.RData and filters for a specific city such as Bangkok. Creates a scatter plot of wsdi versus year with colour-coded scenarios. Demonstrates how to approach initial data exploration and visualisation.
+
+# heatwavesRCP85() function for city or country input (Question 6)
+Creates a function that:
+- Accepts a city or country name,
+- If city: filters heatwaves for that one city under scenario RCP8.5,
+- If country: averages wsdi across all cities in that country by year,
+- If neither: returns an error.
+Returns a ggplot object with a customised title. Demonstrates complex conditionals and dynamic filtering based on user input.
+
+# Parsing crater age ranges with custom functions (Question 7)
+Writes min_age() and max_age() to interpret messy text formats such as <value, >value, ~value, value ± value, and value - value. Converts each entry into consistent numeric minimum and maximum ages. Shows advanced string handling and conditional logic.
+
+# Creating min_age and max_age columns and plotting ranges (Question 7)
+Applies custom functions rowwise to create two new columns. Produces a plot with line segments representing each crater’s age range. Emphasises tidyverse workflows and how to visualise uncertainty across observations.
+
+
 # Creating min_age and max_age columns and plotting ranges (Question 7)
 Applies the custom functions rowwise to generate two new columns. Then plots each crater’s min–max age as a line segment, giving a visual overview of age uncertainty across craters.
 
