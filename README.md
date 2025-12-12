@@ -533,5 +533,73 @@ Applies custom functions rowwise to create two new columns. Produces a plot with
 # Creating min_age and max_age columns and plotting ranges (Question 7)
 Applies the custom functions rowwise to generate two new columns. Then plots each crater’s min–max age as a line segment, giving a visual overview of age uncertainty across craters.
 
+# Data Analytics in R — Study Repository
+
+# About this Repository
+This repository contains weekly question sheets, solutions, practice exercises, and project materials for the Data Analytics in R module.  
+Each week includes a summary of key skills, topics, and tasks that appear in the uploaded PDFs.  
+This repository is designed for open-book exam use, with clean topic headers that allow fast navigation.
+
+# Week 1: Introduction to R and Basic Objects
+Covers creation and manipulation of R objects, vectors, matrices, lists, and data frames.  
+Includes reading data from files, fixing errors in messy datasets, calculating group summaries, and computing weighted means and variances.
+
+# Week 2: Data Manipulation Using the Tidyverse
+Focuses on tidying data with pivot_longer and pivot_wider, joining datasets, filtering, selecting, arranging, and summarising.  
+Includes practice with join types, grouped summaries, vector transformations, and producing clean tidy outputs.
+
+# Week 3: Introduction to Data Visualisation
+Introduces base R and ggplot2 visualisations such as bar plots, histograms, scatter plots, boxplots, faceting, log scaling, and annotation.  
+Includes comparisons across groups, exploratory plotting, and interpreting trends in demographic and environmental datasets.
+
+# Week 4: Structuring Code — Custom Functions and Conditionals
+Covers writing functions, using arguments, return statements, and defensive programming with if, else, stop, and warning.  
+Includes building mathematical functions, input validation, plotting functions, data cleaning with custom functions, and parsing messy text inputs.
+
+# Week 5: Loops in R
+Introduces for loops, while loops, repetition reduction, and vector-based approaches.  
+Tasks include rewriting iterative code, building functions with loops, generating Fibonacci sequences, modifying correlation matrices with nested loops, and modelling dynamic systems like phytoplankton populations.
+
+# Week 6: Model Selection Methods
+Focuses on selecting predictors using best subsets (leaps package), adjusted R², forward selection, backward elimination, and comparing model performance.  
+Includes using add1, drop1, and visualising model size vs. fit quality.
+
+# Week 7: Multiple Linear Regression and Model Diagnostics
+Covers interpreting regression output, assessing model adequacy, evaluating residual patterns, adding polynomial terms, interaction effects, and refining models for improved performance.  
+Emphasises detecting poor fit and modifying model structure accordingly.
+
+# Week 10: Temporal Models and Periodic Structure
+Covers modelling yearly trends using seasonal components (sin and cos terms), long-term trends using polynomial year terms, and interaction effects such as Gender × Year.  
+Emphasises diagnostic checks through residual plots, comparative fits, and estimating temporal patterns.
+
+# Climate Extremes: Extreme Heat and Climate Projections
+Uses global city-level climate projections to compare historical vs. RCP2.6 and RCP8.5 scenarios.  
+Tasks include filtering climate indices, scenario comparison, producing line plots for future projections, and summarising long-term changes.  
+Includes identifying long-term warming patterns and differences between climate models.
+
+# Project: CO2 Emissions by European Cities
+Full exploratory analysis of European city-level emissions.  
+Includes country comparisons, sector-based emissions attribution, scatter plots for explanatory variables, outlier assessment, distribution analysis, and interpreting emissions variation.  
+Highlights the impact of dataset imbalance and the need for careful interpretation when country representation differs.
+
+# Lab Exercises
+Supplemental practice involving correlation matrices, regression interpretation, and additional tidyverse operations.  
+Designed to reinforce weekly concepts through smaller applied tasks.
+
+# How to Use This Repository
+Use the weekly folders for quick reference during your open-book exam.  
+Search by topic headers beginning with # for instant navigation.  
+PDFs contain complete worked solutions, while summaries in this README help you identify where each concept is located.
+
+# Recommended Workflow
+Open the README to locate your topic.  
+Go to the corresponding week folder.  
+Open the question sheet or solutions PDF for full worked examples.  
+Copy code templates directly when answering exam questions.
+
+# Final Notes
+This repository is organised for fast searching and minimal scrolling.  
+Each week represents a different core skill area.  
+Use these summaries as topic locators and the PDFs for detailed explanations.
 
 
